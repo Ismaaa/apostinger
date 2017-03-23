@@ -3,18 +3,20 @@
         <div class="navbar-header">
 
             <a class="navbar-brand" href="principal">Apostinger</a>
-            
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span>                        
-              </button>
+                <span class="icon-bar"></span>
+            </button>
         </div>
 
         <div class="collapse navbar-collapse" id="header">
             <ul class="nav navbar-nav">
                 <li>
-                    <button class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-gift"></span> Aconegueix coins gratis!</button>
+                    <button class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-gift"></span> Aconegueix
+                        coins gratis!
+                    </button>
                 </li>
             </ul>
 
@@ -29,6 +31,6 @@
                     <a href="#"><span class="glyphicon glyphicon-log-in"></span> Logout</a>
                 </li>
             </ul>
-        </div> 
+        </div>
     </div>
 </nav>
