@@ -15,9 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });*/
 
+Route::get('pdf/{id}', 'UsersController@pdf');
+Route::get('user/{id}', 'UsersController@profile');
+
 Route::group(['middleware' => ['web']], function () {
     Route::get('/', function (){
-       return view('welcome'); 
+        $apostes = 34;
+       return view('welcome')->with('apostes', $apostes); 
     })->name('home');
     
     Route::get('principal', function() {
@@ -31,4 +35,5 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('admin', function() {
         return view('admin');
     });
+
 });
