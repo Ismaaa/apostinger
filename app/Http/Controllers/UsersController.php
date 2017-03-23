@@ -15,7 +15,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        
+        $apostes = 335;
+        return view('welcome')->with('apostes', $apostes);
     }
 
     public function profile($id)

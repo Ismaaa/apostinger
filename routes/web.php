@@ -16,13 +16,28 @@ Route::get('/', function () {
 });*/
 
 Route::get('pdf/{id}', 'UsersController@pdf');
-Route::get('user/{id}', 'UsersController@profile');
+Route::get('usuari/{id}', 'UsersController@profile');
 
+Route::get('aposta/{id}', 'AuctionsController@profile');
+
+Route::get('subhasta/{id}', 'AuctionsController@profile');
+
+Route::get('producte/{id}', 'AuctionsController@product');
+Route::get('productes', 'AuctionsController@products');
+Route::get('productes/{category}', 'AuctionsController@categoryProducts');
+
+/* Admins */
+Route::group(['prefix' => 'admin'], function () {
+    Route::get('/', function ()    {
+        return view('admin');;
+    });
+});
+
+Route::get('/', 'UsersController@index');
+/* AIXÒ S'HA D'ANAR ESBORRANT POC A POC I PASSANT A NET A DALT */
+/*
 Route::group(['middleware' => ['web']], function () {
-    Route::get('/', function (){
-        $apostes = 34;
-       return view('welcome')->with('apostes', $apostes); 
-    })->name('home');
+
     
     Route::get('principal', function() {
         return view('principal');
@@ -31,9 +46,4 @@ Route::group(['middleware' => ['web']], function () {
     Route::get('welcome', function() {
         return view('welcome');
     });
-    
-    Route::get('admin', function() {
-        return view('admin');
-    });
-
-});
+});*/
