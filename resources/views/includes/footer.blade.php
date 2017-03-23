@@ -5,6 +5,6 @@
         </li>
         <li>
             <a class="navbar-brand" href="#">Contacta</a>
-        </li>                
+        </li>
     </ul>
 </div>

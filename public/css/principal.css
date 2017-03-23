@@ -11,6 +11,11 @@ img{
    width: 100%;    
 }
 
+body{
+     background-image: url("../images/portada.png");
+     background-repeat: no-repeat;
+}
+
 /*------------- HEADER --------------*/
 .headerinici{
     position: absolute;
