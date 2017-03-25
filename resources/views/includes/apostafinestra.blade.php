@@ -46,10 +46,10 @@
         </div>
         
         <div class="flex-item">
-                <h5 style="color: #000"><span class="glyphicon glyphicon-list-alt"></span> info</h5>
-                <h5 style="color: #000"><span class="glyphicon glyphicon-time"></span> 15:30</h5>
-                <h5 style="color: #000"><span class="glyphicon glyphicon-user"></span> 1234</h5> 
-            </div>
+            <h5 style="color: #000"><span class="glyphicon glyphicon-list-alt"></span> info</h5>
+            <h5 style="color: #000"><span class="glyphicon glyphicon-time"></span> 15:30</h5>
+            <h5 style="color: #000"><span class="glyphicon glyphicon-user"></span> 1234</h5> 
+        </div>
         
         <!-- Trigger the modal with a button -->
 
@@ -79,7 +79,7 @@
 
                                 <br>
 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                         </div>
                         
@@ -89,42 +89,50 @@
                         <!--------- Aposta -------------->
                         <div class="container-fluid">
                             <div class="row">
+                                <div class="col-sm-3">
+                                    <!--null-->    
+                                </div>
                                 <div class="col-lg-6">
                                     <div class="input-group">
+                                        <input type="number" class="form-control" aria-label="Text input with checkbox" placeholder="0" style="text-align:center">
                                         <span class="input-group-addon">€</span>
-                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                        <span class="input-group-addon">
-                                            <input type="checkbox" aria-label="Checkbox for following text input">
-                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <div>
-                            <div>
-                                    <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-1">
+                                    <!--null-->    
                                 </div>
-                        </div>
-                        
-                        <!--------- Botons -------------->
-                        <div class="row content">
-                            <div class="col-sm-4">
-                                <!-- null -->
-                            </div>
-                            <div class="col-sm-4">
-                                <button type="button" class="btn btn-success">
-                                    <a href="#" class="boto">Aposta</a>
-                                </button>
-                                <button type="button" class="btn btn-danger">
-                                    <a href="#" class="boto">Cancela</a>
-                                </button>
+                                
+                                <div class="col-sm-3">
+                                    
+                                    <br>
+                                    
+                                    <div class="flex-item">
+                                        <h4 style="color: #000"><span class="glyphicon glyphicon-time"></span> 15:30</h4>
+                                        <h4 style="color: #000"><span class="glyphicon glyphicon-user"></span> 1234</h4> 
+                                    </div>
+                                </div>
+                                
+                                <div class="col-sm-4">
+                                    <h2>slider</h2>
+                                </div>
+                                
+                                <div class="col-sm-3">
+                                    <h4>Aposta tot</h4>
+                                </div>
                             </div>
                         </div>
                     
+                        <br>
+                        
                         <!--------- Modal footer -------------->
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Tanca</button>
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Aposta</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
                         </div>
                     </div>
                 </div>

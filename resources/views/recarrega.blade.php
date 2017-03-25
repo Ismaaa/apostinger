@@ -24,7 +24,7 @@
         
     </head>
     
-    <body>
+    <body style="background-color: #bae0f2;">
         <!------------------- HEADER ---------------------->
         <header>
             <nav class="navbar navbar-inverse">
@@ -120,7 +120,7 @@
                                     <p>Coins en joc: <span class="label label-primary">1234</span></p>
                                     
                                     <div class="buttonrecarregar">
-                                        <a href="recarrega"><button type="button" class="btn btn-warning">Recarrega coins</button></a>
+                                        <button type="button" class="btn btn-warning">Recarrega coins</button>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
@@ -146,95 +146,68 @@
             </div>
         </div>
         
+        <br><br><br>
+        
+        <!------------------ Contingut de la pagina ------------------>
         <div class="container-fluid text-center">    
             <div class="row content">
+                <div class="col-sm-1">
+                    <!-- null -->
+                </div>
+                <div class="col-sm-8" style="text-align: left;">
+                    <h1>Opcions de pagament</h1>
+                    <h5>Pots gestionar els mètodes de pagament en el joc i online amb les següents opcions de pagament.</h5>
+                    <h5>Has de configurar els mètodes de pagament per defecte o disposar de saldo d'Apostinger per realitzar compres en Apostinger.</h5>
+                </div>
+            </div>
+            
+            <br><br><br>
+            
+            <div class="row content">
                 
-        <!------------------- MENU LATERAL ---------------------->
-                <div class="col-sm-2 sidenav">
-                    
-                    <nav class="navbar navbar-inverse" style="background-color: #314761;">
-    
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menulateral">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>                     
-                        </button>
-
-                        <div class="titolresta" class="collapse navbar-collapse" id="menulateral">
-                            <div class="botoeditarperfil"> <!-- boto editar perfil -->
-                                <a href="#" data-toggle="modal" data-target="#usuari"><span class="glyphicon glyphicon-edit"></span></a>
-                            </div>
-                            <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIABAADcgwAAACwAAAAAAQABAAACAkQBADs=" alt="Generic placeholder image" height="100" width="100">
-                            <div class="infouser">
-                                <h5>Nom Usuari</h5>
-                                <p><a href="#">Coins: <span class="label label-primary">1234</span></a></p>
-                                <p><a href="#">Apostes en curs: <span class="label label-primary">1234</span></a></p>
-                                <p><a href="#">Coins en joc: <span class="label label-primary">1234</span></a></p>
-                            </div>
-                            <div class="buttonrecarregar">
-                                <a href="recarrega"><button type="button" class="btn btn-warning">Recarrega coins</button></a>
-                            </div>
-
-                            <!---------- SEPARACIO ----------->
-                            <hr class="divider">    
-
-                            <nav id="sidebar-wrapper">
-                                <ul class="sidebar-nav">
-                                    <li class="sidebar-brand">
-                                        <h4>Categories</h4>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Tots <span class="badge">5</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Informàtica <span class="badge">5</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Fotografia <span class="badge">5</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Consoles i jocs <span class="badge">5</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Telefonia <span class="badge">5</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Grans electro. <span class="badge">5</span></a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#">Petits electro. <span class="badge">5</span></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                            
-                        </div>
-                    </nav>
-                    
+                <div class="col-sm-1">
+                    <!-- null -->
                 </div>
-        <!------------------- CONTINGUT ---------------------->
-                <div class="col-sm-8 text-left"> 
-                    @include('includes.contingut')
-                </div>
-        <!------------------- ANUNCIS ---------------------->
-                <div class="col-sm-2 sidenav" style="background-color: #fff">
+                
+                <div class="col-sm-5">
+                    <h2>Mètode de pagament</h2>
                     
-                    <div class="well">
-                        <img src="http://localhost:8888/apostinguer/public/images/git3.gif" class="gif">
-                    </div>
-
-                    <div class="well">
-                        <img src="http://localhost:8888/apostinguer/public/images/urgente.gif" class="gif">
-                    </div>
-
-                    <div class="well">
-                        <img src="http://localhost:8888/apostinguer/public/images/pymeralia.gif" class="gif">
+                    <div class="form-group"style="text-align: left;">
+                        <label for="sel1">Selecciona el mètode de pagament:</label>
+                        <select class="form-control" id="sel1">
+                            <option>Visa</option>
+                            <option>MasterCard</option>
+                            <option>Paypal</option>
+                            <option>Altre</option>
+                        </select>
                     </div>
                     
+                    <div style="text-align: left; font-style: oblique;">
+                        <h5>Accepten les següents formes de pagament, les dades estan protegides per la tecnologia Secure Socket Layer (SSL), dotat d'un certificat digital.</h5>
+                    </div>
+                    <button class="btn btn-success navbar-btn">Continuar</button>
+                </div>                
+                
+                <div class="col-sm-5">
+                    <h2>Saldo del compte</h2>
+                    <br>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="0" style="text-align:center">
+                        <span class="input-group-addon">euros</span>
+                    </div>
+                    
+                    <br>
+                    
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-label="Text input with checkbox" placeholder="0" style="text-align:center">
+                        <span class="input-group-addon">coins</span>
+                    </div>
                 </div>
             </div>
         </div>
-        
     </body>
+    
+    <br><br><br><br><br><br>
     
     <!------------------- FOOTER ---------------------->
     <footer class="container-fluid text-right">
