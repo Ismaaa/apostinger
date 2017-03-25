@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>@yield('title')</title>
+        <!-- titol i imatge pestanya -->
+        <title>APOSTINGER</title>
+        <link rel="icon" href="../public/images/cartes.ico" type="image/ico" sizes="16x16">
+        
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         
         <link rel="stylesheet" href="{{ URL::to('src/css/main.css') }}">
         <link rel="stylesheet" href="{{ URL::to('src/css/admin.css') }}">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
     </head>
     
     <!------------------- HEADER ---------------------->
@@ -20,12 +24,13 @@
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="welcome">Apostinger</a>
-                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>   
-                    </button>
+                    <img class="cartes" src="../public/images/cartes.png">
+                    <a class="apostingertitol"  href="welcome">Apostinger</a>
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#header">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>   
+                        </button>
                 </div>
 
                 <div class="collapse navbar-collapse" id="header">
