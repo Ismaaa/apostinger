@@ -32,3 +32,7 @@ Route::group(['middleware' => ['web']], function () {
         return view('admin');
     });
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');

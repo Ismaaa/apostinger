@@ -20,10 +20,10 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->string('name');
             $table->string('surname');
-            $table->string('bank_data');
-            $table->string('rupias');
-            $table->string('phone');
-            $table->integer('rol')->unsigned();
+            $table->string('bank_data')->default("No afegit");
+            $table->integer('rupias')->default(0);
+            $table->string('phone')->default("No afegit");
+            $table->integer('rol')->unsigned()->nullable();
             $table->foreign('rol')->references('id')->on('roles');
             $table->string('password');
             $table->rememberToken();
