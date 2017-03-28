@@ -1,9 +1,4 @@
-h1{
-    background-color: #f2f2f2;
-    padding: 10px;
-}
-
-h2,h3,h4,h5,h6{
+.titolresta{ /*h2, h3, h4, h5, h6*/
     color: #fff;
 }
 
@@ -24,6 +19,16 @@ h2,h3,h4,h5,h6{
     background-color: #831616; /*color clar 991a1a*/
 }
 
+.apostingertitol{
+    padding-right: 10px;
+    padding-left: 5px;
+    font-size: 30px;
+}
+
+.cartes{
+    padding-bottom: 7px;
+    width: 35px;
+}
 /*------------- MENU LATERAL --------------*/
 /* Remove the navbar's default margin-bottom and rounded borders */ 
 .navbar {
@@ -45,7 +50,7 @@ h2,h3,h4,h5,h6{
 }
 
 a{
-    color: white;    
+    color: white;
 }
 
 a:hover{
@@ -54,8 +59,13 @@ a:hover{
 }
 
 /* Sidebar Styles */
+.botoeditarperfil{
+    margin-left: 150px;
+}
+
 .infouser{
     text-align: left;
+    padding-left: 15px;
 }
 
 .buttonrecarregar{
@@ -65,12 +75,14 @@ a:hover{
 .sidebar-nav li {
     line-height: 30px;
     text-align: left;
+    padding-left: 5px;
 }
 
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
     color: #fff;
+    padding-left: 10px;
 }
 
 .sidebar-nav li a:hover {
@@ -89,6 +101,7 @@ a:hover{
 /*------------- ADDS --------------*/
 .gif{
     width: 100%;
+    padding-top: 12px;
 }
 
 

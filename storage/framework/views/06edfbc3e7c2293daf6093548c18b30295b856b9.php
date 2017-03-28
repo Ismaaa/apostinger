@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- link css -->
-        <link rel="stylesheet" href="{{ URL::to('../public/css/main.css') }}">
+        <link rel="stylesheet" href="<?php echo e(URL::to('../public/css/main.css')); ?>">
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
@@ -207,7 +207,7 @@
                 </div>
         <!------------------- CONTINGUT ---------------------->
                 <div class="col-sm-8 text-left"> 
-                    @include('includes.contingut')
+                    <?php echo $__env->make('includes.contingut', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 </div>
         <!------------------- ANUNCIS ---------------------->
                 <div class="col-sm-2 sidenav" style="background-color: #fff">
