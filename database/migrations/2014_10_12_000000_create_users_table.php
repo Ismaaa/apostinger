@@ -15,11 +15,12 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('dni');
-            $table->string('username');
+            $table->string('dni')->unique();
+            $table->string('username')->default("nou usuari");
             $table->string('email');
             $table->string('name');
             $table->string('surname');
+            $table->date('date');
             $table->string('bank_data')->default("No afegit");
             $table->integer('rupias')->default(0);
             $table->string('phone')->default("No afegit");
