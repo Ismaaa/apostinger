@@ -117,8 +117,16 @@
                                     </div>
                                 </div>
                                 
+                                <inputs><input name="thumb-roundness" ngmodel="slider['contrast']" label="" class="form-control ng-valid ng-scope ng-dirty" min="0" max="50" step="1" ng-model="slider['contrast']" type="range"><input name="thumb-roundness" ngmodel="slider['contrast']" label="" class="form-control ng-valid ng-scope ng-dirty" min="0" max="50" step="1" ng-model="slider['contrast']" type="text"></inputs>
+                                
+                                
                                 <div class="col-sm-4">
-                                    <h2>slider</h2>
+                                    <form method="post" action="/action_page_post.php">
+                                        <div data-role="rangeslider">
+                                            <input type="range" name="price-min" id="price-min" value="0" min="0" max="999" class="slider">
+                                        </div>
+                                        <input type="submit" data-inline="true" value="Submit">
+                                    </form>
                                 </div>
                                 
                                 <div class="col-sm-3">

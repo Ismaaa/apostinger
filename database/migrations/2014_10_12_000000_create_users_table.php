@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->string('bank_data')->default("No afegit");
-            $table->integer('rupias')->default(0);
+            $table->integer('rupias')->default(100);
             $table->string('phone')->default("No afegit");
             $table->integer('rol')->unsigned()->nullable();
             $table->foreign('rol')->references('id')->on('roles');
